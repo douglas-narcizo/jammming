@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import './SearchBar.css';
 
-function SearchBar(props) {
+function SearchBar({onSearch}) {
     const [term, setTerm] = useState('');
 
     const handleTermChange = useCallback((e) => {
@@ -9,8 +9,8 @@ function SearchBar(props) {
     }, []);
   
     const search = useCallback(() => {
-      props.onSearch(term);
-    }, [props.onSearch, term]);
+      onSearch(term);
+    }, [onSearch, term]);
 
     const searchOnEnter = (e) => {
       if (e.key === 'Enter') {

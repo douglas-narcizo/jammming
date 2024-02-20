@@ -1,6 +1,6 @@
 .Track-list-container{
     margin: 10px;
-    background-color: hsla(0, 0%, 0%, 0.1);
+    background-color: hsla(0, 0%, 0%, 0.15);
     border-radius: 4px;
     box-shadow: 2px 1px 6px hsla(0, 0%, 0%, 0.6);
 }

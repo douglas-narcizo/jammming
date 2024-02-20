@@ -8,7 +8,7 @@ import UserBadge from './components/UserBadge/UserBadge';
 import Spotify from './util/Spotify';
 import spotifyLogo from './assets/Spotify_Logo_RGB_White.png';
 
-/* Mock data import
+/* Mock data import for initial test purposes
 import response from "./components/response.json";
 
 const mockTracks = response.items.map(track => 
@@ -23,19 +23,6 @@ const mockTracks = response.items.map(track =>
 ); */
 
 function App() {
-/*      <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-  */
   const [user, setUser] = useState({});
   const [searchResults, setSearchResults] = useState([]);
   const [targetPlaylistName, setTargetPlaylistName] = useState('New Playlist');
@@ -79,23 +66,6 @@ function App() {
       setTargetPlaylistName('New Playlist');
       setPlaylistTracks([])
     });
-/*    if (!existingPlaylist) {
-      Spotify.savePlaylist(targetPlaylistName, playlistUris, null).then((response) => {
-        if (response.ok) {
-          window.alert(`${targetPlaylistName} saved succesfully to Spotify`);
-        }
-        setTargetPlaylistName('New Playlist');
-        setPlaylistTracks([])
-      });
-    } else {
-      Spotify.savePlaylist(targetPlaylistName, playlistUris, existingPlaylist.id).then((response) => {
-        if (response.ok) {
-          window.alert(`${targetPlaylistName} saved succesfully to Spotify`);
-        }
-        setTargetPlaylistName('New Playlist');
-        setPlaylistTracks([])
-      });
-    } */
   }
 
   const selectTargetPlaylist = async (e) => {

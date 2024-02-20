@@ -4,6 +4,7 @@
 }
 
 #Playlist-name {
+    color: white;
     font-weight: bold;
     font-size: 1.5em;
     background-color: transparent;
@@ -13,11 +14,11 @@
     padding: 0.15em 0.25em;
     border: 2px solid transparent;
     width: 95%;
-    border-bottom: 2px solid hsla(0, 0%, 0%, 0.25);
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.25);
 }
 
 #Playlist-name:hover {
-    border-color: hsla(0, 0%, 0%, 0.25);
+    border-color: hsla(0, 0%, 100%, 0.25);
     cursor: pointer;
 }
 
