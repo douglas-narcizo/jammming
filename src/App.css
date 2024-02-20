@@ -3,29 +3,60 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Spotify-logo {
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 0.4em;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #5040a2;
+}
+
+.App-header h1 {
+  margin: 1rem;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Highlight {
+  color: #1DB954;
+}
+
+.App-body {
+  background-color: hsl(250, 42%, 60%);
+}
+
+.Lists-area {
+  display: flex;
+  margin: 0 3em;
+  gap: 2em;
+}
+
+footer {
+  text-align: left;
+  padding: 1em 2em;
+  color: white;
+  background-color: #5040a2;
+}
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +67,4 @@
     transform: rotate(360deg);
   }
 }
+*/

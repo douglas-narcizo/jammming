@@ -1,0 +1,49 @@
+.Track-item {
+    display: flex;
+}
+
+.Track-item h3, h4, h5 {
+    margin: 0 5px;
+}
+
+.Track-icon img {
+    width: 60px;
+    vertical-align: middle;
+    margin: 5px;
+    border: 1px solid gray;
+}
+
+.Track-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.Track-item h4 {
+    padding: 2px 0;
+    color: hsla(0, 0%, 0%, 0.6);
+}
+
+.Track-item button {
+    font-weight: bold;
+    font-size: 1.6em;
+    height: 1.4em;
+    width: 1.6em;
+    justify-self: right;
+    align-self: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    position: relative;
+}
+
+.Track-item button:hover {
+    color: white;
+    border-color: hsla(0, 0%, 100%, 0.45);
+    background-color: hsla(0, 0%, 100%, 0.15);
+}
+
+.Track-item button:active {
+    top: 3px;
+}

@@ -1,0 +1,32 @@
+.MyPlaylists {
+    flex: 1;
+    text-align: left;
+}
+
+.MyPlaylists h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.15em 0.25em;
+    border: 2px solid transparent;
+}
+
+.MyPlaylists-container {
+    margin: 10px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    border-radius: 4px;
+    box-shadow: 2px 1px 6px hsla(0, 0%, 0%, 0.6);
+}
+
+.MyPlaylists-container ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.MyPlaylists-list li {
+    padding: 5px;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.15);
+}

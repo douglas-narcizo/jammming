@@ -1,0 +1,16 @@
+.Track-list-container{
+    margin: 10px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    border-radius: 4px;
+    box-shadow: 2px 1px 6px hsla(0, 0%, 0%, 0.6);
+}
+
+.Track-list {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.Track-list li {
+    padding: 5px;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.15);
+}

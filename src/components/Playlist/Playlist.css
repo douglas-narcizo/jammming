@@ -1,0 +1,44 @@
+.Playlist-container {
+    flex: 1;
+    text-align: left;
+}
+
+#Playlist-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.15em 0.25em;
+    border: 2px solid transparent;
+    width: 95%;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.25);
+}
+
+#Playlist-name:hover {
+    border-color: hsla(0, 0%, 0%, 0.25);
+    cursor: pointer;
+}
+
+#Playlist-name:focus-visible {
+    outline: none;
+}
+
+#Playlist-save {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: gray;
+    position: relative;
+    margin: 1rem;
+    padding: 8px 24px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 3px solid darkgray;
+}
+
+#Playlist-save:hover {
+    border-color: #1DB954;
+    color: black;
+    cursor: pointer;
+}
