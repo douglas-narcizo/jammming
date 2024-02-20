@@ -1,5 +1,5 @@
 const clientId = '16ff87b2bca54429b064b03cfa1af213'; // Insert client ID here.
-const redirectUri = 'https://dougs-jammming.netlify.app/callback'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+const redirectUri = 'https://dougs-jammming.netlify.app/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 let accessToken;
 
 const Spotify = {
