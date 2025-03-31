@@ -36,6 +36,10 @@
   color: #1DB954;
 }
 
+.login-message{
+  margin-top: 1.5rem;
+}
+
 .App-body {
   background-color: hsl(250, 42%, 60%);
 }
