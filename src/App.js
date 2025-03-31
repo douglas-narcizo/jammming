@@ -8,20 +8,6 @@ import UserBadge from './components/UserBadge/UserBadge';
 import Spotify from './util/Spotify';
 import spotifyLogo from './assets/Spotify_Logo_RGB_White.png';
 
-/* Mock data import for initial test purposes
-import response from "./components/response.json";
-
-const mockTracks = response.items.map(track => 
-  { return {
-      name: track.name,
-      artist: track.artists[0].name,
-      album: track.album.name,
-      id: track.id,
-      image: track.album.images[0].url
-    };
-  }
-); */
-
 function App() {
   const [user, setUser] = useState({});
   const [searchResults, setSearchResults] = useState([]);
@@ -83,6 +69,7 @@ function App() {
         <UserBadge user={user} logged={userLogged} />
         <h1>Ja<span className="Highlight">mmm</span>ing</h1>
         <h4>for <span><img className="Spotify-logo" src={spotifyLogo} alt="Spotify logo"></img></span></h4>
+        {!user.id && <div className="login-message">(Log in to Spotify to load your playlists)</div>}
       </header>
       <main className="App-body">
         <SearchBar onSearch={search} />
