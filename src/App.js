@@ -69,7 +69,7 @@ function App() {
         <UserBadge user={user} logged={userLogged} />
         <h1>Ja<span className="Highlight">mmm</span>ing</h1>
         <h4>for <span><img className="Spotify-logo" src={spotifyLogo} alt="Spotify logo"></img></span></h4>
-        {!user.id && <div className="login-message">(Log in to Spotify to load your playlists)</div>}
+        <div className="login-message">{!user.id && '(Log in to Spotify to load your playlists)'}</div>
       </header>
       <main className="App-body">
         <SearchBar onSearch={search} />
